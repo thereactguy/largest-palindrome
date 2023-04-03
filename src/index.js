@@ -1,4 +1,4 @@
-function solution(S) {
+function palNumber(S) {
   const digits = S.split("").map(Number);
   const counts = Array(10).fill(0);
   digits.forEach((d) => counts[d]++);
@@ -59,5 +59,5 @@ document.getElementById("checkNum").addEventListener("change", (event) => {
 
 // set button click event
 document.getElementById("checkResult").addEventListener("click", () => {
-  solution(inputContent);
+  palNumber(inputContent);
 });

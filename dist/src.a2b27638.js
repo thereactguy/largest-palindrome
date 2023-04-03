@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/index.js":[function(require,module,exports) {
-function solution(S) {
+function palNumber(S) {
   var digits = S.split("").map(Number);
   var counts = Array(10).fill(0);
   digits.forEach(function (d) {
@@ -171,7 +171,7 @@ document.getElementById("checkNum").addEventListener("change", function (event) 
 
 // set button click event
 document.getElementById("checkResult").addEventListener("click", function () {
-  solution(inputContent);
+  palNumber(inputContent);
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
